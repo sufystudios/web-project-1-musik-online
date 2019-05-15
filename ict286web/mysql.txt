@@ -1,0 +1,179 @@
+
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `artist`
+--
+
+CREATE TABLE IF NOT EXISTS `artist` (
+  `artist_id` int(5) NOT NULL AUTO_INCREMENT,
+  `artist_name` varchar(50) NOT NULL,
+  PRIMARY KEY (`artist_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `artist`
+--
+
+INSERT INTO `artist` (`artist_id`, `artist_name`) VALUES
+(0, 'NO ARTIST'),
+(1, 'Muse'),
+(2, 'Frederick Bertram'),
+(3, 'Paul Gray');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `basket`
+--
+
+CREATE TABLE IF NOT EXISTS `basket` (
+  `basket_id` int(7) NOT NULL,
+  `customer_id` int(7) NOT NULL,
+  `basket_complete` int(1) NOT NULL DEFAULT '0',
+  KEY `basket_id` (`basket_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `basket_items`
+--
+
+CREATE TABLE IF NOT EXISTS `basket_items` (
+  `basket_item_id` int(7) NOT NULL,
+  `basket_id` int(7) NOT NULL,
+  `track_id` int(5) NOT NULL,
+  `track_quantity` int(5) NOT NULL,
+  PRIMARY KEY (`basket_item_id`),
+  KEY `basket_item_id` (`basket_item_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cust`
+--
+
+CREATE TABLE IF NOT EXISTS `cust` (
+  `cust_id` int(7) NOT NULL AUTO_INCREMENT,
+  `cust_un` varchar(20) NOT NULL,
+  `cust_pw` varchar(40) NOT NULL,
+  `cust_isadmin` int(10) NOT NULL DEFAULT '0',
+  `cust_name` varchar(50) DEFAULT NULL,
+  `cust_address` varchar(50) DEFAULT NULL,
+  `cust_address2` varchar(50) DEFAULT NULL,
+  `cust_pc` varchar(50) DEFAULT NULL,
+  `cust_phone` varchar(20) DEFAULT NULL,
+  `cust_email` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`cust_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `customer`
+--
+
+CREATE TABLE IF NOT EXISTS `customer` (
+  `customer_id` bigint(6) unsigned zerofill NOT NULL AUTO_INCREMENT,
+  `customer_name` varchar(50) NOT NULL,
+  `customer_email` varchar(100) NOT NULL,
+  `customer_password` varchar(50) NOT NULL,
+  `customer_isadmin` int(1) DEFAULT '0',
+  `customer_active` int(1) DEFAULT '1',
+  `customer_email_confirmed` int(1) DEFAULT '0',
+  PRIMARY KEY (`customer_id`),
+  KEY `customer_id` (`customer_id`),
+  KEY `customer_id_2` (`customer_id`),
+  KEY `customer_id_3` (`customer_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `customer`
+--
+
+INSERT INTO `customer` (`customer_id`, `customer_name`, `customer_email`, `customer_password`, `customer_isadmin`, `customer_active`, `customer_email_confirmed`) VALUES
+(000001, 'Craig Phoebe', 'craig@comteque.com.au', 'craig', 1, 1, 1),
+(000002, 'Fred Bertram', 'fred.bertram@gmail.com', 'fred', 1, 1, 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `genre`
+--
+
+CREATE TABLE IF NOT EXISTS `genre` (
+  `genre_id` int(5) NOT NULL AUTO_INCREMENT,
+  `genre_name` varchar(50) NOT NULL,
+  PRIMARY KEY (`genre_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `genre`
+--
+
+INSERT INTO `genre` (`genre_id`, `genre_name`) VALUES
+(0, 'NO GENRE'),
+(1, 'Ambient'),
+(2, 'Folk irish'),
+(3, 'Alternative Rock');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `students`
+--
+
+CREATE TABLE IF NOT EXISTS `students` (
+  `studentID` bigint(8) NOT NULL,
+  `FirstName` varchar(50) NOT NULL,
+  `LastName` varchar(50) NOT NULL,
+  `Unit1` varchar(6) DEFAULT NULL,
+  `Unit2` varchar(6) DEFAULT NULL,
+  `Unit3` varchar(6) DEFAULT NULL,
+  `Unit4` varchar(6) DEFAULT NULL,
+  PRIMARY KEY (`studentID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `students`
+--
+
+INSERT INTO `students` (`studentID`, `FirstName`, `LastName`, `Unit1`, `Unit2`, `Unit3`, `Unit4`) VALUES
+(12345678, 'Dylan', 'Phoebe', 'BSC285', 'IND102', 'BSC201', 'MAT201'),
+(12872234, 'Jim', 'Smith', 'MAT101', 'IND101', 'BSC100', 'MAT101'),
+(65434567, 'Craig', 'Phoebe', 'ICT285', 'IND101', 'BSC150', ''),
+(89872234, 'Raycheelle', 'Phoebe', 'BSC290', 'IND202', 'BSC300', 'MAT102');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `track`
+--
+
+CREATE TABLE IF NOT EXISTS `track` (
+  `track_id` int(7) NOT NULL AUTO_INCREMENT,
+  `track_name` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `track_artist_id` int(5) NOT NULL,
+  `track_filename` varchar(100) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `track_genre_id` int(5) NOT NULL,
+  `track_description` varchar(200) CHARACTER SET latin1 COLLATE latin1_general_ci DEFAULT NULL,
+  `track_active` int(1) NOT NULL DEFAULT '1',
+  `track_soh` int(3) NOT NULL DEFAULT '999',
+  PRIMARY KEY (`track_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `track`
+--
+
+INSERT INTO `track` (`track_id`, `track_name`, `track_artist_id`, `track_filename`, `track_genre_id`, `track_description`, `track_active`, `track_soh`) VALUES
+(1, 'Wormhole', 3, 'wormhole.mp3', 1, 'Wormhole by Paul Gray', 1, 999);
+
+

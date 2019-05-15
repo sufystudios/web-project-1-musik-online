@@ -1,0 +1,33 @@
+
+RECENET CHANGES:
+
+- Only active tracks are available in the featured songs list and the music.php page.
+
+
+
+
+
+TO DO LIST:
+
+
+
+- add an area to upload a new song file and replace existing mp3 (in editbox.php).
+
+
+- have a max of five songs showing on each page with ?next page? option
+
+- show last login for admins, update last_login_date on user table for each login.
+
+- add content to 'About Us', 'help'
+
+- ALL mysql functionality to be in /mysql/func_account.php and /mysql/func_tracks.php
+
+- all tracks to be stored on a filepath, with track information in mysql ( as per Mark's email).
+
+- user account creation function, with email validation of desired email address.. also some password validation
+
+- work out what to do with the existing 'Account' button.. maybe a user can change their own email / password / name etc etc.. see recent purchases?
+ 
+- document describing the site.
+
+--- phone applicaton ONCE all of this has been done, using existing mysql calls.

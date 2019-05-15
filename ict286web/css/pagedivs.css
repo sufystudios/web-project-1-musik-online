@@ -1,0 +1,145 @@
+
+
+
+.header {
+
+//////////////////////this not in use at the moment.
+	background: url("./images/logo.gif");
+   position: fixed;
+  background-position: center;
+  height:225px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:0px;
+  padding-top: 0px;
+        
+
+}
+	
+
+
+
+
+.footer {
+   position: fixed;
+  right: 0;
+  background-color: rgba(0,0,0,0.7); 
+  opacity:1;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  padding: 1rem;
+  text-align: center;
+  clear: both;
+}
+
+
+
+
+
+.basket {width:100px;position:relative; 
+
+    float: right;
+	text-align: center;
+
+	border: 1px solid green;
+	padding: 3px;
+	width:16%;
+	height:90%;
+
+}
+
+
+
+.innersongdetaildiv
+	{
+	padding: 0px;
+height: 99%;
+	width:99%;
+   	}
+
+
+
+.songdetailsbox   {width:100px;position:relative; 
+
+	border: 1px solid green;
+	padding: 3px;
+	width:99%;
+	height:70px;
+
+}
+
+
+
+.searchbox {width:100px;position:relative; 
+
+    float: left;
+
+
+	border: 1px solid green;
+	padding: 3px;
+	width:16%;
+	height:90%;
+
+}
+
+
+.listbox {width:100px;position:relative; 
+
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 20px;
+
+    display: inline-block;
+
+
+	background: rgba(0, 200, 0, .1);
+	padding: 3px;
+	width:60%;
+	height:90%;
+
+}
+
+
+
+
+.accountsLeft {width:45%;position:relative; 
+	margin-left: 2%;
+	margin-right: 2%;
+    float: left;
+	padding: 3px;
+	width:32%;
+	height:90%;
+
+}
+
+
+
+
+
+
+.accountsRight {width:100px;position:relative; 
+
+    float: right;
+	text-align: center;
+
+	padding: 3px;
+	width:45%;
+	height:90%;
+
+}
+
+
+.invoiceFrame
+{
+	padding: 3px;
+	width:500px;
+	height:400px;
+	border: 0;
+}
+
+

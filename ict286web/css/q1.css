@@ -1,0 +1,62 @@
+header {
+	background-image: url("../images/background.jpg");
+	background-size: 100% auto;
+        height: 30%;
+	color: silver;
+	margin-top:0px;
+	padding-top: 30px;
+	text-align: center;
+        
+}
+	
+html {
+}
+html, body {
+
+}
+.imgcircle {
+        width: 19%;
+	float: right;
+	border-radius:50%;
+}
+nav {
+ 	background-color: #1a1a1a;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+nav a {
+	color: beige;
+	padding: 10px;
+} 
+nav a:hover {
+	color: chocolate;
+}
+nav a:active {
+	color: BurlyWood;
+}
+
+main {
+	width: 80%;
+	margin-bottom:50px;
+	min-height: 300px;
+}
+main p {
+	padding-top: 50px;
+	padding-left: 70px;
+}
+	
+footer {
+  
+  
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  clear: both;
+}

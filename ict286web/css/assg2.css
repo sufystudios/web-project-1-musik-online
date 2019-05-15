@@ -1,0 +1,201 @@
+
+html {
+}
+
+
+
+#menu-outer {
+}
+
+
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+
+
+
+html, body {
+
+	background-image: url("../images/bgimage.jpg");
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:0px;
+  padding-top: 0px;
+
+
+
+
+}
+
+
+
+
+table.menutable { margin: auto; text-align: center; border: 0; border-spacing: 0px;width: 90%;}
+table.menutable td { color:black; background-color:#000033; font-size: 16px; height: 40px; width: 100px;  border:0px; padding:0px;margin:0px;}
+
+
+table.basketTable { margin: auto; text-align: center; border: 0; border-spacing: 0px;width: 95%;}
+
+
+img.mainLogo {width:60%;}
+
+
+* {
+color:#EEEEEE ;font-size: 12px; font-family: Verdana, Airal, 'sans-serif' !important;/* <-- fonts */
+
+}
+
+
+.about {font-size: 14px;margin-left:20%;margin-right:20%;}
+
+.searchMatch {color: yellow;}
+
+
+.centered
+        {	
+
+        text-align:center;display:block;
+	width:100%;
+	background-image: url("../images/background2.jpg");
+        }
+
+
+
+
+.imgcircle {
+        width: 19%;
+	float: right;
+	border-radius:50%;
+}
+
+
+
+.menuButton:hover {background-color: #882255}
+
+
+
+
+.accountbox {	text-align: center;}
+
+
+.searchbox {	text-align: center;}
+
+
+.addButton {background-image:url('../images/add.gif'); background-color:black; padding: 0px; border: none; width: 59px; height:29px;position:relative;top:20px;}
+
+.removeButton {background-image:url('../images/remove.gif'); background-color:black; padding: 0px; border: none; width: 59px; height:29px;position:relative;top:20px;}
+
+.removeButtonSmall {background-image:url('../images/removesmall.gif'); background-color:black; padding: 0px; border: none; width: 26px; height:14px;position:relative;top:1px;}
+
+
+
+
+
+.clickButton {background-color:#EEEEEE; color:#000000;height:26px; width:75%; font-weight: bold;}
+
+.clickButtonEdit {background-color:#EEEEEE; color:#000000;height:26px; width:25%; font-weight: bold; margin:auto; }
+
+.clickButtonTable {background-color:#EEEEEE; color:#000000;height:26px; width:99%; font-weight: bold; margin:auto; }
+
+.clickButtonUpdateCentered {background-color:#EEEEEE; color:#000000;height:26px; width40%; font-weight: bold; margin:auto;text-align:center;display:block; }
+
+
+
+.clickButtonBuyNow {background-color:#FE9E9E; color:#000000;height:26px; width:17%; font-weight: bold; margin:auto; }
+
+.textBox {background-color:#EEEEEE; color:#222222;height:19px;width:90%; font-weight: normal;font-size:9pt;}
+
+.textBoxEdit {background-color:#EEEEEE; color:#222222;height:19px;width:30%; font-weight: normal;font-size:9pt;}
+
+.textBoxEditLong {background-color:#EEEEEE; color:#222222;height:19px;width:70%; font-weight: normal;font-size:9pt;}
+
+.selectBoxEdit {background-color:#EEEEEE; color:#222222;height:19px;width:19%; font-weight: normal;font-size:9pt;}
+
+.selectBoxBasket {background-color:#EEEEEE; color:#222222;height:19px;width:60%; font-weight: normal;font-size:9pt;}
+
+.formLabels {width: 500px;}
+
+
+
+
+option {background-color:#EEEEEE; color:#222222;height:19px;width:15%; font-weight: normal;font-size:9pt;}
+
+
+.warning {color: red;}
+
+nav {
+ 	background-color: #1a1a1a;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+nav a {
+	color: beige;
+	padding: 10px;
+} 
+
+
+nav a:hover {
+	color: chocolate;
+}
+
+
+nav a:active {
+	color: BurlyWood;
+}
+
+main {
+	width: 80%;
+	margin-bottom:50px;
+	min-height: 300px;
+}
+
+
+main p {
+	padding-top: 50px;
+	padding-left: 70px;
+}
+	
+
+
+
+main {
+  right: 30px;
+  bottom: 0px;
+  left: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  margin-right: auto;
+  text-align: left;
+  clear: both;
+}
+
+
+
+.container {
+        margin-left:40%;
+	width:100%;
+	}
+
+
+section {
+  
+  margin-top: 1em;
+}
+
+section .col-md-3 {
+  border-left: 1px solid #ccc;
+}
+
+section .col-md-3:first-child {
+  border: none;
+}
+
+
