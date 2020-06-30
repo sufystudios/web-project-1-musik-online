@@ -1,8 +1,8 @@
 <?php
 $dbhost = "localhost";
-$dbuser = "X31550821";
-$dbpass = "X31550821";
-$dbname = "X31550821";
+$dbuser = "";
+$dbpass = "";
+$dbname = "";
 $conn = mysql_pconnect($dbhost,$dbuser,$dbpass) or
 
 	die("connection failed");
